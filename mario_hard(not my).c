@@ -10,19 +10,20 @@ int main(void)
     int hashes;
     int hashes2;
 
-do
+   do
     {
         height = get_int("Height: ");
     }
     //Устанавливаем условия
     while (height < 1 || height > 8);
+   
     //Создаем строки
     for (int i = 1; i <= height; i++)
     {
      //Создаем столбцы пробелов
        for (spaces = (height - i); spaces > 0; spaces--)
         {
-            printf("_");
+            printf(" ");
             sleep(1);
         }
          //Создаем столбцы хешей
@@ -31,7 +32,7 @@ do
             printf("#");
             sleep(1);
         }
-        printf("__");
+        printf("  ");
             //Создаем столбцы хешей
         for (hashes2 = 1; hashes2 <= (i); hashes2++)
         {
